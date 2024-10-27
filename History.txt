@@ -5,6 +5,7 @@
 * Added geometry and textpos packages for document dimensions and positioning
 * Added titlepage styles and bdaii templating
 * Added bdaii branding images
+* Moved the project to work with biber/bibtex
 * Added \multicite command to handle multiple references each as its own sidenote
 * Redefined the cite command to play nice with all biblatex styles
 
