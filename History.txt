@@ -1,7 +1,7 @@
 == 1.0.0 - 2024/10/25
 
 * bdaii fork template's Birthday!
-* Added sections package
+* Added sections package to include titlepages and other sections as needed
 * Added geometry and textpos packages for document dimensions and positioning
 * Added titlepage styles and bdaii templating
 * Added bdaii branding images

@@ -1,29 +1,9 @@
-Hi,
-
-Welcome to the beginnings of Tufte LaTeX package to help you
-produce Tufte-style handouts, reports, and notes.
+# BDAII Tufte Templates
+This repository includes the necessary files to run a customized version of the LaTeX versions of Edward Tufte's handouts and long reports. Original code can be found in the [Tufte LaTeX repo](https://github.com/Tufte-LaTeX/tufte-latex).
 
 ## Quick Start
+You can locally build the project (e.g., using VS Code) or import this repo into Overleaf. BDAII's approved branding assets are included in the [sections](https://github.com/pcuellar-bdai/bdaii-tufte-templates/tree/main/sections) folder.  
 
-Try typesetting `sample-handout.tex` with the following sequence
-of commands,
-
-    pdflatex sample-handout
-    bibtex   sample-handout
-    pdflatex sample-handout
-    pdflatex sample-handout
-
-The result should look like `sample-handout.pdf`.
-
-The sample book can be compiled with the following:
-
-    pdflatex sample-book
-    bibtex sample-book
-    texindy --language english sample-book.idx
-    # or makeindex sample-book.idx
-    pdflatex sample-book
-    pdflatex sample-book
-    pdflatex sample-book
 
 ## Troubleshooting
 
@@ -37,19 +17,23 @@ questions, see the [UK TeX FAQ](http://www.tex.ac.uk/faq/) or search the [`comp.
 
 The following packages are required:
 
+ * biber
+ * biblatex
  * chngpage or changepage
  * fancyhdr
  * fontenc
  * geometry
  * hyperref
- * natbib and bibentry
+ * metalogo
  * optparams
  * paralist
  * placeins
  * ragged2e
+ * subfiles
  * setspace
  * textcase
  * textcomp
+ * textpos
  * titlesec
  * titletoc
  * xcolor
@@ -65,15 +49,9 @@ The following packages are optional and will be automatically used if installed:
  * mathpazo
  * soul
 
-## Bugs/Features/Support
-
-For kudos, feature requests, patches, or support requests that you
-feel are _particular_ to this Tufte-LaTeX package, i.e., not a general
-LaTeX issue, please use this project's issue tracker available at <https://github.com/Tufte-LaTeX/tufte-latex/issues>.
-
 ## Contributing
 
-Patches and pull requests are most welcome via the issue tracker!  Submit a series of high quality patches, and you'll find yourself a developer on this project.
+Pull requests are welcome!
 
 ## License
 
