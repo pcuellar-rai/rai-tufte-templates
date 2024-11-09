@@ -521,7 +521,7 @@
   \TufteLoadHyperref%
 }{% hyperfootnotes override our modifications to the \footnote* and
   % \@footnote* commands.
-  \PassOptionsToPackage{hyperfootnotes=false}{hyperref}
+  \PassOptionsToPackage{hyperfootnotes=false,hyphens}{hyperref}
 }
 
 %%

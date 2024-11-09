@@ -8,6 +8,7 @@
 * Moved the project to work with biber/bibtex
 * Added \multicite command to handle multiple references each as its own sidenote
 * Redefined the cite command to play nice with all biblatex styles
+* Add “hyphens” option to allow for hyperlinks inside sidenotes
 
 == 3.5.2 - 2015/06/21
 
