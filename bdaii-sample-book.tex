@@ -1,10 +1,16 @@
 \documentclass{bdaii-book}
 
+% Control line-breaking of words in text and titles
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=100
+\hbadness=100
+
 \hypersetup{colorlinks}% uncomment this line if you prefer colored hyperlinks (e.g., for onscreen viewing)
 
 %%
 % Book metadata
-% \title{Short Title Cool BDAII Long Report\thanks{Thanks to Baxter for his inspiration.}}
+% \title{Short Title Cool RAI Institute Long Report\thanks{Thanks to Baxter for his inspiration.}}
 % \author[R2]{R2D2}
 % \publisher{BDAII Press}
 
@@ -57,6 +63,9 @@
 %%
 % Prints a trailing space in a smart way.
 \usepackage{xspace}
+
+\usepackage{background} % places images on every page at a given x,y position. Used to adds lower corner RAI logo
+
 
 %%
 % Some shortcuts for Tufte's book titles.  The lowercase commands will
@@ -154,6 +163,17 @@
 
 \addbibresource{bdaii-sample.bib}
 \hypersetup{colorlinks}
+
+\backgroundsetup{
+   scale=0.5,
+   angle=0,
+   opacity=1,
+   color=black,
+   contents={\begin{tikzpicture}[remember picture, overlay]
+      \node at ([xshift=6cm,yshift=-38cm] current page.north east)
+            {\includegraphics[width = 3cm]{graphics/_rai-monogram-color-rgb.jpg}};
+     \end{tikzpicture}}
+ }
 
 \begin{document}
 

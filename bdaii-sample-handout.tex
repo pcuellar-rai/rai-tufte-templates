@@ -1,6 +1,12 @@
 \documentclass{bdaii-handout}
 
-\title[Short Title for your BDAII Document]{{A Much Longer Title for your Report/Handout/Project Proposal}\thanks{Acknowledgement note: Inspired by Spot!}}
+% Control line-breaking of words in text and titles
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=100
+\hbadness=100
+
+\title[Short Title for your RAI Institute Document]{{A Much Longer Title for your Report/Handout/Project Proposal}\thanks{Acknowledgement note: Inspired by Spot!}}
 \author[Short Author Note]{Author(s) name(s)}
 % If you want the date not to be displayed under the title, you need to comment line `\gdef\@@date{\Large\itshape\@date\par}` on the `bdaii-common.def` file
 \date{28 March 2010} % without \date command, current date is supplied
@@ -21,6 +27,7 @@
 % Subfiles package to compile  separately
 \usepackage{subfiles} % adding subfiles to compiling sequence
 \usepackage{metalogo} % TeX logos
+\usepackage{background} % places images on every page at a given x,y position. Used to adds lower corner RAI logo
 
 % Standardize command font styles and environments
 \newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
@@ -39,6 +46,17 @@
 % Restart sidenote counting. Use if counting on proposal skips
 % \setcounter{footnote}{-1}
 
+\backgroundsetup{
+   scale=0.5,
+   angle=0,
+   opacity=1,
+   color=black,
+   contents={\begin{tikzpicture}[remember picture, overlay]
+      \node at ([xshift=6cm,yshift=-38cm] current page.north east)
+            {\includegraphics[width = 3cm]{graphics/_rai-monogram-color-rgb.jpg}};
+     \end{tikzpicture}}
+ }
+
 \begin{document}
 
 % Add sections to document
@@ -48,7 +66,7 @@
 
 \begin{abstract}
 \noindent
-This document describes the Tufte handout \LaTeX\ document style for the The Boston Dynamics AI Institute. It builds on Edward Tufte's uses in his books and handouts. This document is a fork of Tufte's Handbook \LaTeX on this GitHub repository \url{https://github.com/Tufte-LaTeX/tufte-latex}. 
+This document describes the Tufte handout \LaTeX\ document style for the Robotics and AI Institute. It builds on Edward Tufte's uses in his books and handouts. This document is a fork of Tufte's Handbook \LaTeX on this GitHub repository \url{https://github.com/Tufte-LaTeX/tufte-latex}. 
 \end{abstract}
 
 This document aims to be at once a demonstration of the features of the Tufte-\LaTeX\ document classes and a style guide to their use. It also provides examples and comments on the style's use. Only a brief overview is presented here; for a complete reference, see the sample book on the file \textit{bdaii-sample-book.tex}.
@@ -148,10 +166,10 @@ provide a list of keys separated by commas: \Verb|\cite{Tufte2006,Tufte1990}|.
 \begin{docspec}
     \doccmd{cite\{\docarg{bibkey1,bibkey2,\ldots}\}}
 \end{docspec}
-Multiple citations can have each its own number. You can use the \Verb|\multicite{ufte2006,Tufte1990}| command to do this as exemplified here \multicite{Tufte1990,Bringhurst2005}
+Multiple citations can have each its own number. You can use the \Verb|\multicite{tufte2006,Tufte1990}| command to do this as exemplified here \multicite{Tufte1990,Bringhurst2005}
 
 \section{Figures and Tables}\label{sec:figures-and-tables}
-The \texttt{/graphics} folder includes various image files for the branding of The AI Institute if you want to use them to change the title-page or for other purposes. 
+The \texttt{/graphics} folder includes various image files for the branding of The RAI Institute if you want to use them to change the title-page or for other purposes. 
 
 Images and graphics play an integral role in Tufte's work.
 In addition to the standard \docenv{figure} and \docenv{tabular} environments,
