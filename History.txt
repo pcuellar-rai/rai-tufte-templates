@@ -1,7 +1,11 @@
+
+
 == 2.0.0 - 2024/10/25
 * RAI rebranding template revamp. All assets updated and added to graphics folder
 * Add background package to place monogram logo on every page
 * Added controls for managing line breaking
+* Added hyperref package to reference sections within documents
+* Added enumitem package to control space in item lists inside table cells
 
 
 == 1.0.0 - 2024/10/25
