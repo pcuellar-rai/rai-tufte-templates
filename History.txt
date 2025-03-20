@@ -1,3 +1,5 @@
+== 2.0.1 - 2025/03/20
+* Added background package to placae RAI's icon at the bottom of each page
 
 
 == 2.0.0 - 2024/10/25

@@ -2,7 +2,7 @@
 This repository includes the necessary files to run a customized version of the LaTeX versions of Edward Tufte's handouts and long reports. Original code can be found in the [Tufte LaTeX repo](https://github.com/Tufte-LaTeX/tufte-latex).
 
 ## Quick Start
-You can locally build the project (e.g., using VS Code) or import this repo into Overleaf. RAI's approved branding assets are included in the [sections](https://github.com/pcuellar-bdai/rai-tufte-templates/tree/main/sections) folder.  
+You can locally use the project (e.g., with VS Code) or import this repo into Overleaf. RAI's approved branding assets are included in the [sections](https://github.com/pcuellar-rai/rai-tufte-templates/tree/main/sections) folder. Documentation on how to configure your remotes with Overleaf can be found [following this link](https://www.overleaf.com/learn/how-to/Git_integration). 
 
 
 ## Troubleshooting
@@ -17,9 +17,11 @@ questions, see the [UK TeX FAQ](http://www.tex.ac.uk/faq/) or search the [`comp.
 
 The following packages are required:
 
+ * background
  * biber
  * biblatex
  * chngpage or changepage
+ * enumitem
  * fancyhdr
  * fontenc
  * geometry
