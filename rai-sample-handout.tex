@@ -1,4 +1,4 @@
-\documentclass{bdaii-handout}
+\documentclass{rai-handout}
 
 % Control line-breaking of words in text and titles
 \tolerance=1
@@ -8,7 +8,7 @@
 
 \title[Short Title for your RAI Institute Document]{{A Much Longer Title for your Report/Handout/Project Proposal}\thanks{Acknowledgement note: Inspired by Spot!}}
 \author[Short Author Note]{Author(s) name(s)}
-% If you want the date not to be displayed under the title, you need to comment line `\gdef\@@date{\Large\itshape\@date\par}` on the `bdaii-common.def` file
+% If you want the date not to be displayed under the title, you need to comment line `\gdef\@@date{\Large\itshape\@date\par}` on the `rai-common.def` file
 \date{28 March 2010} % without \date command, current date is supplied
 %\geometry{showframe} % display margins for debugging page layout
 
@@ -40,7 +40,7 @@
 \newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
 
 % Bib resource for Biblatex
-\addbibresource{bdaii-sample.bib}
+\addbibresource{rai-sample.bib}
 \hypersetup{colorlinks}
 
 % Restart sidenote counting. Use if counting on proposal skips
@@ -60,7 +60,7 @@
 \begin{document}
 
 % Add sections to document
-\subfile{sections/bdaii-titlepage}
+\subfile{sections/rai-titlepage}
 
 \maketitle% this prints the handout title, author, and date
 
@@ -69,7 +69,7 @@
 This document describes the Tufte handout \LaTeX\ document style for the Robotics and AI Institute. It builds on Edward Tufte's uses in his books and handouts. This document is a fork of Tufte's Handbook \LaTeX on this GitHub repository \url{https://github.com/Tufte-LaTeX/tufte-latex}. 
 \end{abstract}
 
-This document aims to be at once a demonstration of the features of the Tufte-\LaTeX\ document classes and a style guide to their use. It also provides examples and comments on the style's use. Only a brief overview is presented here; for a complete reference, see the sample book on the file \textit{bdaii-sample-book.tex}.
+This document aims to be at once a demonstration of the features of the Tufte-\LaTeX\ document classes and a style guide to their use. It also provides examples and comments on the style's use. Only a brief overview is presented here; for a complete reference, see the sample book on the file \textit{rai-sample-book.tex}.
 
 %\printclassoptions
 
@@ -299,10 +299,10 @@ To install the Robotics-\LaTeX\ classes, upload the files below to your project 
 
 \begin{quote}
   \ttfamily
-  bdaii-handout.cls\\
-  bdaii-common.def\\
-  bdaii-handout.cls\\
-  bdaii.bst
+  rai-handout.cls\\
+  rai-common.def\\
+  rai-handout.cls\\
+  rai.bst
 \end{quote}
 
 \section{More Documentation}\label{sec:more-doc}

@@ -1,8 +1,8 @@
-# BDAII Tufte Templates
+# RAI Tufte Templates
 This repository includes the necessary files to run a customized version of the LaTeX versions of Edward Tufte's handouts and long reports. Original code can be found in the [Tufte LaTeX repo](https://github.com/Tufte-LaTeX/tufte-latex).
 
 ## Quick Start
-You can locally build the project (e.g., using VS Code) or import this repo into Overleaf. BDAII's approved branding assets are included in the [sections](https://github.com/pcuellar-bdai/bdaii-tufte-templates/tree/main/sections) folder.  
+You can locally build the project (e.g., using VS Code) or import this repo into Overleaf. RAI's approved branding assets are included in the [sections](https://github.com/pcuellar-bdai/rai-tufte-templates/tree/main/sections) folder.  
 
 
 ## Troubleshooting
