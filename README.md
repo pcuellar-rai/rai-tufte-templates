@@ -7,7 +7,7 @@ You can locally use the project (e.g., with VS Code) or import this repo into Ov
 
 ## Troubleshooting
 
-If you encounter errors of the form,
+If you encounter errors of the form:
 
     ! LaTeX Error: File `paralist.sty' not found.
 
